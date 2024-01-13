@@ -1,0 +1,1 @@
+# Priprava_za_izpit
