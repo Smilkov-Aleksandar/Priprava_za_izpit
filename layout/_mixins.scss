@@ -1,0 +1,5 @@
+@mixin setFont($fontFamily : "Rubik, sans-serif", $fontSize : 16px){
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  @content;
+}

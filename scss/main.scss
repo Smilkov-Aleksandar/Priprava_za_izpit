@@ -1,0 +1,19 @@
+@import "../generic/layout";
+@import "../generic/variables";
+@import "../generic/reset";
+@import "../layout/mixins";
+@import "../layout/header";
+@import "../layout/banner";
+@import "../layout/misc";
+@import "../layout/articles";
+@import "../layout/footer";
+
+
+
+body{
+  background-color: $primary;
+  @include setFont("Rubik, sans-serif", 16px);
+  @media (max-width: #{$mobile}) {
+    font-size: 10px;
+  }
+}

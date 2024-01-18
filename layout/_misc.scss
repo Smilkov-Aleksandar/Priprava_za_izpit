@@ -1,0 +1,44 @@
+section.main__video {
+  margin-top: 140px;
+  margin-bottom: 140px;
+
+  h2 {
+    @include setFont("Rubik") {
+      text-align: center;
+      padding-bottom: 60px;
+      font-size: 36px;
+      font-weight: normal;
+    }
+  }
+
+    .video {
+      background-image: url("../assets/images/Video Container.png");
+      width: 850px;
+      height: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      img{
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+@media(max-width : #{$mobile} ){
+  .mein__video{
+    width: 100%;
+  }
+  h2{
+    font-size: 32px!important;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: left!important;
+  }
+  .video{
+    width: 500px!important;
+    height: 400px!important;
+    img{
+      width: 50px;
+
+    }
+  }
+}

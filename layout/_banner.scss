@@ -1,0 +1,115 @@
+.banner{
+  margin-top: 140px;
+  .article__top{
+    display: flex;
+  }
+  .banner__container{
+    display: flex;
+    .picture{
+      padding-left: 30px;
+    }
+  }
+  .main__title h1{
+    @include setFont("Ubuntu"){
+      font-size: 2em;
+      color: $secondary;
+      font-weight: bold;
+      padding-left: 15px;
+    }
+  }
+  .main__title h2{
+    @include setFont("Ubuntu"){
+      font-size: 4em;
+      font-weight: bold;
+      color: $secondary;
+      padding-top: 30px;
+      padding-bottom: 30px;
+  }
+  }
+  .main__title p{
+    @include setFont("Ubuntu"){
+      font-size: 1em;
+      color: $secondary;
+      font-weight: bold;
+      padding-bottom: 10px;
+    }
+  }
+  .icons{
+    display: flex;
+    padding-top: 40px;
+    .icon img{
+     padding-right: 20px;
+    }
+    .scroll {
+      @include setFont("Rubik") {
+        text-align: center;
+        padding-left: 250px;
+        font-weight: 300;
+      }
+      p{
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width : #{$mobile} ){
+  .banner{
+    width: 100%;
+  }
+  .banner__container{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .article__top{
+    padding-left: 20px;
+  }
+  h1{
+    font-size: 24px!important;
+  }
+  .main__title{
+    padding-bottom: 30px;
+
+    h2{
+      @include setFont("Rubik"){
+        font-size: 5em!important;
+        font-weight: normal!important;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+    p{
+      @include setFont("Rubik"){
+        font-weight: normal!important;
+        font-size: 2em!important;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  }
+  .picture{
+    padding-bottom: 40px;
+    padding-left: 0!important;
+    padding-right: 0!important;
+    img{
+      height: auto;
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  .icons{
+    display: flex;
+    .icon{
+      margin-left: auto;
+      margin-right: auto;
+      img{
+        padding-right: 40px!important;
+      }
+    }
+  }
+
+  .scroll{
+    display: none;
+  }
+}

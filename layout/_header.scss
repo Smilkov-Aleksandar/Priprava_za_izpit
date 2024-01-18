@@ -1,0 +1,38 @@
+@import "../generic/layout";
+@import "../generic/variables";
+@import '../layout/mixins';
+
+.container{
+  width: $container-width;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu{
+    display: flex;
+    p{
+      padding-right: 15px;
+      font-size: 24px;
+    }
+  }
+}
+@media (max-width : #{$mobile} ){
+  .container{
+    width: 100%;
+  }
+  .nav{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .menu p {
+    display: none;
+  }
+  .search{
+    display: none;
+  }
+}
+
